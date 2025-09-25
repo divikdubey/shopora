@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopora - Products</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Shopora</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      <a href="login.html">Login</a>
+      <button onclick="toggleDarkMode()" style="margin-left:10px;">🌙</button>
+
+    </nav>
+    <div class="search-bar">
+      <input type="text" id="search" placeholder="Search products...">
+    </div>
+  </header>
+
+  <section class="product-section">
+    <h2>All Products</h2>
+    <div class="product-grid" id="product-list"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 ShopEase</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+

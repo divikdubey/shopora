@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopora - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Shopora</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      <a href="login.html">Login</a>
+      <button onclick="toggleDarkMode()" style="margin-left:10px;">🌙</button>
+
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Search products..." id="search">
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1 style="color: rgb(221, 11, 64);">Welcome to Shopora</h1>
+    <p style="color: brown;">Best deals on Mobiles, Laptops, Fashion and more!</p>
+    <a href="products.html" class="btn">Shop Now</a>
+  </section>
+
+  <!-- Image Gallery Section -->
+<section class="gallery">
+  <h2>Shop by Categories</h2>
+  <div class="gallery-grid">
+
+    <div class="gallery-item">
+      <a href="https://www.myntra.com" target="_blank">
+        <img src="images/fashion.jpg" alt="Fashion">
+        <div class="overlay">Fashion</div>
+      </a>
+    </div>
+
+    <div class="gallery-item">
+      <a href="https://www.amazon.in/electronics" target="_blank">
+        <img src="images/electronics.jpg" alt="Electronics">
+        <div class="overlay">Electronics</div>
+      </a>
+    </div>
+
+    <div class="gallery-item">
+      <a href="https://www.bigbasket.com" target="_blank">
+        <img src="images/grocery.jpg" alt="Groceries">
+        <div class="overlay">Groceries</div>
+      </a>
+    </div>
+
+    <div class="gallery-item">
+      <a href="https://www.pepperfry.com" target="_blank">
+        <img src="images/home.jpg" alt="Home & Furniture">
+        <div class="overlay">Home & Furniture</div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+  <section class="featured">
+    <h2>Featured Products</h2>
+    <div class="product-grid" id="product-list"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 ShopEase</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
